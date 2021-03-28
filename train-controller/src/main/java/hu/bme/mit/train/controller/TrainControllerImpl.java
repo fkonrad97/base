@@ -50,8 +50,8 @@ public class TrainControllerImpl implements TrainController {
 	public void setJoystickPosition(int joystickPosition) {
 		this.step = joystickPosition;
 		// Timer for implementing reference speed task
-		private Timer timer = new Timer(true);
-		private TimerTask task = new TimerTask() {
+		Timer timer = new Timer(true);
+		TimerTask task = new TimerTask() {
 		@Override
 		public void run() {
 			followSpeed();
