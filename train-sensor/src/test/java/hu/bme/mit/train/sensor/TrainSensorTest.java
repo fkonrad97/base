@@ -33,7 +33,7 @@ public class TrainSensorTest {
     @Test
     public void UnderAbsoluteMargin() {
         sensor.overrideSpeedLimit(-1);
-        Mockito.verify(trainUser, times(1)).setAlarmState(false);
+        Mockito.verify(trainUser, times(1)).setAlarmState(true);
 
     }
 
